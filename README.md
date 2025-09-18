@@ -34,7 +34,7 @@
 <li>Contact – Example of a mailto: link</li></ul></ul>
 <li><strong>footer</strong></li>
 <ul><li>h6 that includes a copyright symbol, the year, your name, a link that will send an email,  and a Back to Top anchor link that returns the user to the top of the page.</li></ul>
-</ul>
+</ul></ul></ul></ul>
 Place an html comment after each closing (div) tag identifying which ID’d (div) you are closing.
 <p></p>
 Make sure you validate your html, upload to your web space and add a link to the assignment on your course homepage. If you get lost, refer to the document we created in class. Good Luck.
