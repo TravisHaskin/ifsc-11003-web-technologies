@@ -1,5 +1,26 @@
 /*      CSS Demo Stylesheet     */
 
+/*-------- Utility Classes --------*/
+
+.container{
+    width: 80vw;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+
+/*-------- Responsive Images --------*/
+
+img{
+    max-width: 100%;
+    height: auto;
+
+}
+
+
+
+/*-------- Global Styles --------*/
+
 body{
     font-family: "Montserrat", sans-serif;
     background-color: #222222;
@@ -32,8 +53,58 @@ header.primary  h2{
 }
 header.primary nav ul{
     padding:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top:30px;
+    list-style-type: none;
 }
 header.primary nav ul li{
         list-style-type: none;
 
+}
+header.primary nav ul li a{
+    color: #FFFFFF;
+    background-color: #333333;
+    padding: 5px 7.5px 5px 7.5px;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color:rgba(51, 51, 51, 0.7);
+    transition: .2s;
+
+}
+
+header.primary nav a:hover{
+    background-color:rgba(73, 73, 73, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+
+@media screen and (max-width: 555px) {
+    header.primary nav ul{
+        flex-direction: column;
+        gap:20px;
+    }
+    header.primary nav ul a{
+        display:block;
+    }
+
+    .container{
+        width: 90vw;
+        margin: 20px auto;
+}
 }
