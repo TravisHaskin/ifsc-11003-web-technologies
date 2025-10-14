@@ -154,6 +154,13 @@ header.primary nav a:hover{
 
 }
 
+#practice{
+    background-image: url("../img/black-background.webp");
+    background-size: cover;
+}
+
+
+
 
 #practice a{
     color: #FFFFFF;
@@ -176,7 +183,7 @@ header.primary nav a:hover{
     width: 100%;
     border: 1px solid #444;
     border-collapse: collapse;
-}}
+}
 
 #practice caption{
     font-weight: bold;
@@ -184,9 +191,7 @@ header.primary nav a:hover{
     font-size: 1.3rem;
 }
 
-#practice tr{
-   
-}
+
 
 #practice tr:hover{
     background-color: rgba(255,255,255,0.1);
@@ -211,6 +216,48 @@ header.primary nav a:hover{
     padding: 10px;
 }
 
+#practice ol{
+    list-style-type: lower-roman;
+
+}
+
+#practice ul ul{
+    color: red;
+}
+
+#practice dt{
+    font-weight: bold;
+ }
+
+#practice dd{
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+dd + dt{
+    margin-top: 30px;
+}
+
+#practice blockquote{
+    border: 4px double #FFFFFF;
+    margin: 40px 80px;
+    padding: 20px 40px;
+    font-style: italic;
+    color: #FFFFFF;
+    border-radius: 30px 0;
+    background-color: #111111;
+    text-shadow:1px 1px #000000;
+}
+
+#practice blockquote cite{
+    display: block;
+    font-size: 0.8rem;
+    text-align: right;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: bold;
+    color: #FFFFFF;
+}
 
 
 
@@ -283,7 +330,9 @@ aside .widget footer{
     header.primary nav ul a{
         display:block;
     }
-
+    #content{
+        flex-direction: column;
+    }
     .container{
         width: 90vw;
         margin: 20px auto;
