@@ -1,9 +1,10 @@
 /* Color Theme  
-#A44652 (red)
+#C14347 (red)
 #714968 (purple)
 #D86541 (orange)
 #5A527D (blue)
 #9A4858 (pink)
+#311913 (brown / dark red)
 */
 
 /* ---------------Box Sizing----------------- */
@@ -57,16 +58,17 @@ img {
 /* ----- Global Styles ---- */
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Times New Roman", sans-serif;
   margin: 0;
+  background-color: #311913;
 }
 
 header.primary {
   background-color: #181c1f;
   text-align: center;
   color: #ffffff;
-  text-shadow: 2px 2px #000000;
   position: relative;
+  min-height: 800px;
 }
 
 header.primary::before {
@@ -148,11 +150,12 @@ header.primary nav a:active {
 
 section#content {
   padding: 4em 0;
+  color: #ffffff;
 }
 
 section#content h2{
   font-family: "Times New Roman", cursive;
-  color: #9A4858;
+  color: #D86541;
 }
 
 
@@ -161,15 +164,6 @@ section#content table{
   width:100%;
   border: 1px solid #c0c0c0;
   border-collapse:collapse;
-}
-
-section#content caption{
-  font-weight:bold;
-  font-size:1.5rem;
-  margin:10px;
-  font-family: "Times New Roman", cursive;
-  font-size: 2em;
-  color: #33536b;
 }
 
 section#content th {
@@ -195,7 +189,21 @@ section#content tr:hover{
 /* ------------- Articles --------------- */
 
 section#articles {
-  background: #181c1f;
+  background: #C14347;
+}
+
+#background {
+  color: white;
+  text-align: center;
+  max-width: 800px;
+  margin: 20px auto 20px auto;
+  font-size: 1.2rem;
+  text-shadow: 2px 2px #311913;
+}
+
+h2.background{
+  padding-top: 20px;
+  text-align: center;
 }
 
 section#articles .container {
@@ -203,32 +211,28 @@ section#articles .container {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  border-bottom: 1px solid #c0c0c0;
-  padding: 0 0 4em 0;
+  padding-bottom: 4em;
 }
 
 section#articles h2,
 #content h2 {
-  flex: 0 0 100%;
-  color: #33536b;
   text-align: center;
-  font-family: "Goldman", cursive;
   font-size: 2em;
 }
 
 section#articles h2 {
-  color: #fff;
-  text-shadow: 2px 2px #000;
+  color: white;
+  text-shadow: 2px 2px #311913;
+  text-align: center;
 }
 
 #articles article.post {
   width: 30%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   padding: 10px;
-  transition: 0.6s;
-  font-size: 0.8rem;
+  font-size: 1rem;
   border-radius: 10px;
-  background: #fff;
+  background-color: white;
 }
 
 #articles article.post h2 {
@@ -237,22 +241,14 @@ section#articles h2 {
 }
 
 #articles article.post:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-}
-
-#articles article time,
-#articles article figcaption,
-#articles article footer {
-  font-size: 0.8em;
-  color: #c0c0c0;
-  text-transform: uppercase;
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.4);
 }
 
 #articles .post a:link,
 #articles .post a:visited {
-  color: #F28D52;
+  color: #C14347;
   text-decoration:none;
-  text-shadow:1px 1px #000;
+  text-shadow:1px 1px 1px #000;
 }
 
 #articles .post figure {
@@ -264,10 +260,10 @@ section#articles h2 {
 }
 
 #articles ul {
-  padding: 0 20px;
+  padding: 0 25px;
 }
 #articles li {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 /* ------------- Hero --------------- */
@@ -331,21 +327,21 @@ aside article footer {
 /*------ Footer ------*/
 
 footer#colophon {
-  background-color: #593122;
+  background-color: #311913;
 }
 
 #colophon h6 {
   padding: 20px;
   margin: 0;
-  color: #fff;
+  color: white;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
 }
 
 #colophon h6 a:link,
 #colophon h6 a:visited, #colophon p {
-  color: #fff;
+  color: white;
   max-width:900px;
   text-align:center;
 }
