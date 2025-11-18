@@ -1,9 +1,9 @@
 /* Color Theme  
-#F28D52
-#D96B43
-#593122
-#8C3C2A
-#F2F2F2
+#A44652 (red)
+#714968 (purple)
+#D86541 (orange)
+#5A527D (blue)
+#9A4858 (pink)
 */
 
 /* ---------------Box Sizing----------------- */
@@ -71,7 +71,7 @@ header.primary {
 
 header.primary::before {
   content: "";
-  background-image: url(../img/mars-rover-logo.webp);
+  background-image: url(../img/mars-rover.webp);
   background-position: center;
   background-size: cover;
   position: absolute;
@@ -81,14 +81,32 @@ header.primary::before {
   left: 0px;
 }
 
-
-header.primary h2 {
-  font-family: "Goldman", cursive;
-  font-size: 2em;
-  /* Shorhand Three Value Top, Left/Right, Bottom*/
-  margin: 20px auto 40px;
-  position: relative;
+.hero-image-area {
+    min-height: 350px; 
+    position: relative; 
+    text-decoration: none;
 }
+
+.nasa-logo-image {
+    width: 350px;
+    height: auto; 
+    display: block;
+    margin: 0 auto;
+}
+.tagline {
+    color: white; 
+    font-size: 1.25em;
+    margin-top: 10px; 
+    text-shadow: none;
+
+}
+.logo-text-overlay {
+    position: absolute; 
+    top: 15%; 
+    right: 20%;
+    text-align: center;
+}
+
 
 header.primary nav ul {
   position: relative;
@@ -99,7 +117,7 @@ header.primary nav ul {
   max-width: 900px;
   margin: auto;
   padding-top:1em;
-  padding-bottom:18em;
+  padding-bottom:4em;
 
 }
 
@@ -114,16 +132,16 @@ header.primary nav a:visited {
   color: white;
   text-decoration: none;
   background-color: #000000;
-  background-color: rgba(75, 20, 30, .6);
+  background-color: rgba(106, 46, 53, 0.5);
   padding: 8px 16px;
   border-radius: 10px;
-  transition: 0.6s;
+  transition: 0.3s;
   display: block;
 }
 
 header.primary nav a:hover,
 header.primary nav a:active {
-  background-color: rgba(75, 20, 30, 1);
+  background-color: rgba(106, 46, 53, 1);
 }
 
 /* ------------- Content --------------- */
@@ -134,14 +152,10 @@ section#content {
 
 section#content h2{
   font-family: "Times New Roman", cursive;
-  color: #D96B43;
+  color: #9A4858;
 }
 
-section#content h3{
-  font-family: "Times New Roman", cursive;
-  color: #8C3C2A;
-  font-size:1.5rem;
-}
+
 
 section#content table{
   width:100%;
@@ -338,6 +352,25 @@ footer#colophon {
 
 
 /* ---------------Media Queries----------------- */
+
+@media (max-width: 1300px) {
+    .logo-text-overlay {
+        top: 20%; 
+        right: 0;
+        left: 0; 
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .nasa-logo-image {
+        width: 200px;
+    }
+    
+    .tagline {
+        font-size: 1em;
+        margin-top: 5px;
+    }
+}
 
 @media screen and (max-width: 600px) {
   header.primary nav ul {
