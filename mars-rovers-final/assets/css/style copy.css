@@ -68,12 +68,12 @@ header.primary {
   text-align: center;
   color: #ffffff;
   position: relative;
-  min-height: 800px;
+  min-height: 500px;
 }
 
 header.primary::before {
   content: "";
-  background-image: url(../img/mars-rover.webp);
+  background-image: url(../img/PIA24348~medium.webp);
   background-position: center;
   background-size: cover;
   position: absolute;
@@ -150,7 +150,7 @@ header.primary nav a:active {
 
 section#content {
   padding: 4em 0;
-  color: #ffffff;
+  color: black;
 }
 
 section#content h2{
@@ -158,6 +158,20 @@ section#content h2{
   color: #D86541;
 }
 
+.card{
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    padding:2rem;
+    color: black;
+    background-color: white;
+    margin: 15px; 0;
+    border-radius:10px;
+}
+
+img{
+    width:150px;
+    height:150px;
+}
 
 
 section#content table{
@@ -276,9 +290,10 @@ section#articles h2 {
 
 /* Attribute Selector */
 aside[role="complementary"] {
-  background-color: #181c1f;
+  background-color: #311913;
   color: #ffffff;
   padding: 2.5em;
+  text-align: center;
 }
 
 aside .container {
