@@ -58,7 +58,7 @@ img {
 /* ----- Global Styles ---- */
 
 body {
-  font-family: "Times New Roman", sans-serif;
+  font-family: "Times New Roman", cursive;
   margin: 0;
   background-color: #311913;
 }
@@ -85,7 +85,7 @@ header.primary::before {
 
 .hero-image-area {
     min-height: 350px; 
-    position: relative; 
+    position: absolute; 
     text-decoration: none;
 }
 
@@ -156,6 +156,29 @@ section#content {
 section#content h2{
   font-family: "Times New Roman", cursive;
   color: #D86541;
+}
+
+section#contact ul{
+  padding-left:20px;
+  margin-bottom:20px;
+  text-align: left;
+}
+
+section#contact {
+  font-family: "Times New Roman", cursive;
+  max-width:900px;
+  margin:auto;
+  color: white;
+}
+
+section#contact h2{
+  text-align: center;
+  margin-bottom:20px;
+  color: #D86541;
+}
+
+section#contact a{
+  color: white;
 }
 
 .card{
