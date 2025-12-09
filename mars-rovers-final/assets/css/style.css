@@ -1,8 +1,6 @@
 /* Color Theme  
-#C14347 (red)
-#714968 (purple)
-#D86541 (orange)
-#5A527D (blue)
+#B54648 (red)
+#CB6743 (orange)
 #9A4858 (pink)
 #311913 (brown / dark red)
 */
@@ -63,6 +61,9 @@ body {
   background-color: #311913;
 }
 
+
+/* ------------- Header --------------- */
+
 header.primary {
   background-color: #181c1f;
   text-align: center;
@@ -82,33 +83,6 @@ header.primary::before {
   bottom: 0px;
   left: 0px;
 }
-
-.hero-image-area {
-    min-height: 350px; 
-    position: relative; 
-    text-decoration: none;
-}
-
-.nasa-logo-image {
-    width: 350px;
-    height: auto; 
-    display: block;
-    margin: 0 auto;
-}
-.tagline {
-    color: white; 
-    font-size: 1.25em;
-    margin-top: 10px; 
-    text-shadow: none;
-
-}
-.logo-text-overlay {
-    position: absolute; 
-    top: 15%; 
-    right: 20%;
-    text-align: center;
-}
-
 
 header.primary nav ul {
   position: relative;
@@ -146,45 +120,49 @@ header.primary nav a:active {
   background-color: rgba(106, 46, 53, 1);
 }
 
+/* ----- Hero Image Area ----- */
+
+.hero-image-area {
+    min-height: 350px; 
+    position: relative; 
+    text-decoration: none;
+}
+
+.nasa-logo-image {
+    width: 350px;
+    height: auto; 
+    display: block;
+    margin: 0 auto;
+}
+.tagline {
+    color: white; 
+    font-size: 1.25em;
+    margin-top: 10px; 
+    text-shadow: none;
+
+}
+.logo-text-overlay {
+    position: absolute; 
+    top: 45%; 
+    right: 20%;
+    text-align: center;
+}
+
 /* ------------- Content --------------- */
 
 section#content {
   padding: 4em 0;
   color: #ffffff;
+  font-size: 1.2em;
+  text-align: center;
 }
 
 section#content h2{
   font-family: "Times New Roman", cursive;
   color: #D86541;
+  text-shadow: 2px 2px #000000;
 }
 
-
-
-section#content table{
-  width:100%;
-  border: 1px solid #c0c0c0;
-  border-collapse:collapse;
-}
-
-section#content th {
-  background:#181C1F;
-  color:#ffffff;
-  text-align:left;
-  padding:10px;
-}
-
-section#content td{
-  border:1px solid #c0c0c0;
-  padding:5px;
-}
-
-section#content tr:nth-child(even){
-  background:#DCDCDC;
-}
-
-section#content tr:hover{
-  background:#8EA6B8;
-}
 
 /* ------------- Articles --------------- */
 
@@ -196,14 +174,9 @@ section#articles {
   color: white;
   text-align: center;
   max-width: 800px;
-  margin: 20px auto 20px auto;
+  margin: 0 auto 60px auto;
   font-size: 1.2rem;
-  text-shadow: 2px 2px #311913;
-}
-
-h2.background{
-  padding-top: 20px;
-  text-align: center;
+  text-shadow: 2px 2px 2px #311913;
 }
 
 section#articles .container {
@@ -217,12 +190,13 @@ section#articles .container {
 section#articles h2,
 #content h2 {
   text-align: center;
-  font-size: 2em;
+  font-size: 2.5em;
+  padding-top: 30px;
 }
 
 section#articles h2 {
   color: white;
-  text-shadow: 2px 2px #311913;
+  text-shadow: 2px 2px 2px #311913;
   text-align: center;
 }
 
@@ -266,63 +240,6 @@ section#articles h2 {
   margin-bottom: 10px;
 }
 
-/* ------------- Hero --------------- */
-
-#hero {
-  padding: 4em 0;
-}
-
-/* ------------- Aside --------------- */
-
-/* Attribute Selector */
-aside[role="complementary"] {
-  background-color: #181c1f;
-  color: #ffffff;
-  padding: 2.5em;
-}
-
-aside .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  gap:40px;
-}
-
-aside article.widget {
-    flex:1;
-}
-
-.widget.overview table {
-  font-size: 0.7em;
-  border-collapse: collapse;
-  width:100%;
-}
-
-.widget.overview table td {
-  border-bottom: 1px solid #fff;
-  padding: 10px;
-}
-
-.widget.overview table td:nth-child(even) {
-  text-align: right;
-}
-
-aside article a:link,
-aside article a:visited {
-  color: #ffffff;
-  display: block;
-  margin-top: 1.2em;
-  letter-spacing: 1.2px;
-}
-
-aside article a:hover,
-aside article a:active {
-  text-decoration: none;
-}
-
-aside article footer {
-  display: none;
-}
 
 /*------ Footer ------*/
 
@@ -359,11 +276,11 @@ footer#colophon {
     }
 
     .nasa-logo-image {
-        width: 200px;
+        width: 300px;
     }
     
     .tagline {
-        font-size: 1em;
+        font-size: 1.2em;
         margin-top: 5px;
     }
 }
@@ -384,6 +301,8 @@ footer#colophon {
     display: block;
   }
 
+}
+@media screen and (max-width: 800px) {
   section#articles .container {
     display: flex;
     flex-direction: column;
@@ -397,9 +316,5 @@ footer#colophon {
     width: 100%;
     margin-bottom: 2em;
   }
-  
-  aside .container {
-  flex-direction: column;
-}
   
 }
